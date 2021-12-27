@@ -12,7 +12,9 @@ html {
 body {
   margin: 0;
   background-image: url("../images/background.jpg");
-  background-size: cover;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
   overflow-x: hidden;
 }
 
