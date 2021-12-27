@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -14,6 +18,20 @@ body {
 
 .section {
   width: 100%;
+  margin: 5em 0 5em 0;
+}
+
+.text {
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+.text__is-medium {
+  font-size: 2em;
+}
+
+.text__is-center {
+  text-align: center;
 }
 
 .has-blured-background::before {
@@ -31,18 +49,4 @@ body {
 .has-blured-background__is-scrolled::before {
   transition: opacity .25s;
   opacity: 100%;
-}
-
-.text {
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-}
-
-.text__is-medium {
-  font-size: 2em;
-  margin: 2em;
-}
-
-.text__is-center {
-  text-align: center;
 }
