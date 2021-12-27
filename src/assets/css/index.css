@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100%;
+}
+
+.has-blured-background::before {
+  background-color: rgba(0, 0, 0, 0.75);
+  content: "";
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(16px);
+  opacity: 0%;
+}
+
+.has-blured-background__is-scrolled::before {
+  transition: opacity .25s;
+  opacity: 100%;
+}
+
+.text {
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+.text__is-medium {
+  font-size: 2em;
+  margin: 2em;
+}
+
+.text__is-center {
+  text-align: center;
+}
